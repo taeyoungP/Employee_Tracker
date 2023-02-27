@@ -44,7 +44,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
  ![Main Menu](./Assets/menu.png)
 
-**NOTE** In video demonstration, console table printer was used to print out tables. (to make it looks cleaner with border & and not printing out null values.) Codes in this repo uses console.table and both of the packages are availalbe to use.
+**NOTE** In video demonstration, console table printer was used to print out tables. (to make it looks cleaner with border & not printing out null values.) Codes in this repo uses console.table and both of the packages are availalbe to use.
 
  * console.table:
 
@@ -108,20 +108,20 @@ THEN I am prompted to select an employee to update and their new role and this i
 The application will be invoked by using the following command:
 
     ```bash
-    node index.js
+        node index.js
     ```
 
 SQL files should be sourced before invoking application with following example command:
 
     ```
-    source db/schema.sql
+        source db/schema.sql
     ```
 
-If you are already in db folder, no need to add db directory. Just simply run 'source schema.sql' in MySQL environment. SQL files must be sourced before running index.js files with this order: source schema.sql -> seeds.sql
+If you are already in db folder, no need to add db directory in command. Just simply run 'source schema.sql' in MySQL environment. SQL files must be sourced before running index.js files with this order: source schema.sql -> seeds.sql (No need to source query.sql in db folder. This is just a sql file for testing queries.)
 
 * When the application is invoked, user is given with several options to manage(view/add/update/delete) employee database. 
 
-* User is required provide inputs for every option. (Either type-in input or selecting choices)
+* User is required to provide inputs for every option. (Either type-in input or selecting choices)
 
 * When deleting Role(s) and/or Department(s), please be aware that employee(s) who are in that role(s) and/or department(s) will be stay remained. Please update their role to existing role. When deleting department(s), make sure to delete the roles in the department.
 
