@@ -107,14 +107,14 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 The application will be invoked by using the following command:
 
-    ```bash
-        node index.js
+   ```bash
+    node index.js
     ```
 
 SQL files should be sourced before invoking application with following example command:
 
-    ```
-        source db/schema.sql
+   ```
+    source db/schema.sql
     ```
 
 If you are already in db folder, no need to add db directory in command. Just simply run 'source schema.sql' in MySQL environment. SQL files must be sourced before running index.js files with this order: source schema.sql -> seeds.sql (No need to source query.sql in db folder. This is just a sql file for testing queries.)
