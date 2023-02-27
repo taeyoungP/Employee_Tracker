@@ -124,8 +124,8 @@ If you are already in db folder, no need to add db directory in command. Just si
 * User is required to provide inputs for every option. (Either type-in input or selecting choices)
 
 * When deleting Role(s) and/or Department(s), please be aware that employee(s) who are in that role(s) and/or department(s) will be stay remained. Please update their role to existing role. When deleting department(s), make sure to delete the roles in the department.
-    * In other word, when role or department is deleted before employee's data is deleted/updated, this employee **will not show up** in 'View All Employees' option. However, the employee's data will be still exist in database. Therefore, user need to manually delete employee from 'delete' option.  
-    * The recommneded way to deleting data is in this order: delete employee(s) -> delete role(s) -> delete department(s). 
+    * In other word, when role or department is deleted before employee's data is deleted/updated, this employee **will not show up** in 'View All Employees' option. However, the employee's data will be still exist in database. Therefore, user needs to manually delete employee from 'delete' option.  
+    * The recommended way to deleting data is in this order: delete employee(s) -> delete role(s) -> delete department(s). 
 
 * To exit the application, select 'Quit'.
 
