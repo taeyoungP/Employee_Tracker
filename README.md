@@ -1,12 +1,9 @@
-# 12 SQL: Employee Tracker
+# Employee Tracker
 
-## Your Task
+## Task for this Project
 
-Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**. Your assignment this week is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
+Developers frequently have to create interfaces that allow non-developers to easily view and interact with information stored in databases. These interfaces are called **content management systems (CMS)**. Task for this project is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
-Because this Challenge will require the use of the `Inquirer` package, ensure that you install and use Inquirer version 8.2.4. To do so, use the following command in your project folder: `npm i inquirer@8.2.4`.
-
-Because this application won’t be deployed, you’ll also need to create a walkthrough video that demonstrates its functionality and all of the following acceptance criteria being met. You’ll need to submit a link to the video and add it to the README of your project.
 
 ## User Story
 
@@ -43,6 +40,62 @@ THEN I am prompted to select an employee to update and their new role and this i
 The following video shows an example of the application being used from the command line:
 
 [![A video thumbnail shows the command-line employee management application with a play button overlaying the view.](./Assets/12-sql-homework-video-thumbnail.png)](https://2u-20.wistia.com/medias/2lnle7xnpk)
+
+
+## Description
+ * [Link to Video Demonstration]()
+
+
+## Features
+
+ * View All Employees: view all employees (employee id, first name, last name, role title, department, salary, manager)
+ * Add Employee: add new employee
+ * Update Employee Role: update employee's role title
+ * View All Roles: view all roles (role id, title, department, salary)
+ * Add Role: add new role
+ * View All Departments: view all departments (department id, department name)
+ * Add Departments: add new department
+ * Update Employee's Manager
+ * View Employees by Manager
+ * View Employees by Department
+ * Delete Departments, Roles, or Employees
+ * View the Total Utilized Budget of Department: combined salaries of all employees in selected department
+ * Quit: exit the app
+
+## How to Use
+
+**NOTE** Before invoking the application, user is required to install MySQL server and npm packages.
+
+The application will be invoked by using the following command:
+
+    ```bash
+    node index.js
+    ```
+
+SQL files should be sourced before invoking application with following example command:
+
+    ```
+    source db/schema.sql
+    ```
+
+If you are already in db folder, no need to add db directory. Just simply run 'source schema.sql' in MySQL environment. SQL files must be sourced before running index.js files with this order: source schema.sql -> seeds.sql
+
+* When the application is invoked, user is given with several options to manage(view/add/update/delete) employee database. 
+
+* User is required provide inputs for every option. (Either type-in input or selecting choices)
+
+* When deleting Role(s) and/or Departments, please be aware that employee(s) who are related to that role(s) and/or department(s) also will be deleted as the database is based on relational database.
+
+* To exit the application, select 'Quit'.
+
+
+
+## Credits
+ * npm [inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4)
+ * npm [mysql2 package](https://www.npmjs.com/package/mysql2)
+ * npm [console table printer](https://www.npmjs.com/package/console-table-printer)
+ * Function to check if value is only num(digits), referenced from: https://stackoverflow.com/questions/1779013/check-if-string-contains-only-digits
+
 
 ## Getting Started
 
