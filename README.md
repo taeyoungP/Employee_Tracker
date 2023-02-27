@@ -40,19 +40,22 @@ THEN I am prompted to select an employee to update and their new role and this i
 
  * [Link to Video Demonstration](https://drive.google.com/file/d/1ifWt6JHaAg1GES4JK9z7bLY5-yklEMwE/view)
 
-Main Menu
+ * Main Menu:
+
  ![Main Menu](./Assets/menu.png)
 
 **NOTE** In video demonstration, console table printer was used to print out tables. (to make it looks cleaner with border & and not printing out null values.) Codes in this repo uses console.table and both of the packages are availalbe to use.
 
-console.table
-![console.table](./Assets/console_table.png)
+ * console.table:
 
-console table printer
-![console table printer](./Assets/console_table_printer.png)
+ ![console.table](./Assets/console_table.png)
+
+ * console table printer:
+
+ ![console table printer](./Assets/console_table_printer.png)
 
 
-**Database Schema for the db tables:** 
+**Database Schema used for the db tables:** 
 * `department`
 
     * `id`: `INT PRIMARY KEY`
