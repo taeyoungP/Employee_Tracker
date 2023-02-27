@@ -105,13 +105,13 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 **NOTE** Before invoking the application, user is required to install MySQL server and npm packages.
 
-The application will be invoked by using the following command:
+* The application will be invoked by using the following command:
 
    ```bash
     node index.js
     ```
 
-SQL files should be sourced before invoking application with following example command:
+* SQL files should be sourced before invoking application with following example command:
 
    ```
     source db/schema.sql
